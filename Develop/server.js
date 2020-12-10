@@ -3,7 +3,8 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const path = require("path");
 const PORT = process.env.PORT || 3000;
-const db = require("./models/");
+const db = require("./models");
+
 const app = express();
 
 app.use(logger("dev"));
@@ -36,14 +37,19 @@ app.get("/stats", (req, res) => {
 // To create new workout
 
 app.post("/api/workouts", ({ body }, res) => {
-  
+ 
 
   db.Workout.create(body).then((dbWorkout => {
-    res.json(dbWorkout);
+      res.json(dbWorkout);
   })).catch(err => {
-    res.json(err);
+      res.json(err);
+  });
 });
-});
+
+// get workout
+
+
+
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });

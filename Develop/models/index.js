@@ -1,6 +1,6 @@
 // exporting object of model
 
 module.exports = {
-    Workout: require("./workout"),
+    Workout: require("./Workout"),
     
   };
