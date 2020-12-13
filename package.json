@@ -2,7 +2,7 @@
   "name": "fitnesstracker",
   "version": "1.0.0",
   "description": "This is a fitness tracker to help you track your workouts and your progress.",
-  "main": "/Develop/server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
