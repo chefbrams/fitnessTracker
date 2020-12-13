@@ -16,6 +16,7 @@ const WorkoutSchema = new Schema
       },
       duration: {
         type: Number,
+        default: 0
       },
     
       weight: {
@@ -40,7 +41,7 @@ const WorkoutSchema = new Schema
     type: Number,
     default: 0
   },
-    date: {
+    day: {
         type: Date,
         default: Date.now
       }
