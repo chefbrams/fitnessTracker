@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const path = require("path");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const db = require("./models");
 
 const app = express();
@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 //  html routes
-app.get("/", (req, res) => {
+app.get("./", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/index.html"));
 });
 app.get("/exercise", (req, res) => {
