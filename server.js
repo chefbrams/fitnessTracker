@@ -70,8 +70,8 @@ app.get("/api/workouts", (req, res) => {
     .then((dbWorkout) => {
       dbWorkout.forEach((elements) => {
         let total = 0;
-        elements.exercises.forEach((e) => {
-          total += elements.duration;
+        elements.exercises.forEach((ex) => {
+          total += ex.duration;
         });
         elements.totalDuration = total;
       });
