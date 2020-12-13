@@ -25,6 +25,7 @@ To install, you must fork the repo and then copy the files onto your computer.  
 ![add exercise](hw1.png)
 ![workout totals](hw2.png)
 ![weekly totals](hw3.png)
+[Click to try out Fitness Tracker](https://arcane-harbor-72010.herokuapp.com/stats)
         
 ## License 
 ISC
